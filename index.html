@@ -6,11 +6,139 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>CV-Markdawn</title>
+    <title>CV_from_Anna_Bogdanovich</title>
 </head>
 
 <body>
-    <h1>CV from Anna Bogdanovich</h1>
+    <header>
+        <nav class="navigation">
+            <ul>
+                <li>Contacts</li>
+                <li>About myself</li>
+                <li>Skills and Proficiency</li>
+                <li>Code Examples</li>
+                <li>Education and courses</li>
+                <li>Work experience</li>
+                <li>Languages</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="name">
+            <img src="C:\Users\jbUser\Desktop" width="100" height="150" alt=" avatar">
+            <h1 class="my-name ">Anna Bogdanovich</h1>
+            <h3 class="profession ">Junior Frontend Developer</h3>
+        </section>
+        <section class="contacts ">
+            <h3>Contacts:</h3>
+            <ul>
+                <li>Phone: +375(29)6039099</li>
+                <li>E-mail: annabo1988@gmail.com</li>
+                <li>Telegram: @anitabogdanovich</li>
+                <li>Discord: #5959</li>
+                <li>GitHub: AnnaBogdanovich4</li>
+            </ul>
+        </section>
+        <section class="about-myself">
+            <h3>About myself:</h3>
+            <p>I want to learn Front-End Development in RSSchool!</p>
+        </section>
+        <section class="skills-and-proficiency">
+            <h3>Skills and Proficiency:</h3>
+            <ul>
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript Basics</li>
+                <li>GitHub/Git</li>
+                <li>VS Code</li>
+                <li>Figma</li>
+            </ul>
+        </section>
+        <section class="code-examples">
+            <h3>Code Examples:</h3>
+            <code>
+                <body>
+                    <canvas id="canvas" width="400" height="400"></canvas>
+                  <script>
+                    var canvas = document.getElementById("canvas");
+                    var ctx = canvas.getContext("2d");
+                    var fillCircus = true;
+
+                    function circus(x, y, radius, color, fillCircus) {
+                        ctx.fillStyle = color;
+                        ctx.strokeStyle = color;
+                        ctx.lineWidth = 3;
+                        ctx.beginPath();
+                        if (fillCircus) {
+                            ctx.arc(x, y, radius, 0, Math.PI * 2, false);
+                            ctx.fill();
+                        } else {
+                            ctx.arc(x, y, radius, 0, Math.PI * 2, false);
+                            ctx.stroke();
+                        };
+                    };
+
+                    function drawSnowman(x, y) {
+                        circus(x, y, 50, "blue", false);
+                        circus(x, (y + 120), 70, "blue", false);
+                        circus((x - 25), (y - 25), 5, "black", true);
+                        circus((x + 25), (y - 25), 5, "black", true);
+                        circus(x, y, 5, "orange", true);
+                        circus(x, (y + 95), 5, "orange", true);
+                        circus(x, (y + 120), 5, "orange", true);
+                        circus(x, (y + 145), 5, "orange", true);
+                    };
+
+                    drawSnowman(150, 150);
+
+                </script>  
+            </code>
+        </section>
+        <section class="education-and-courses">
+            <h3>Education and courses:</h3>
+            <ul>
+                <li>HTML Academy. I study HTML, CSS and JS on simulators.</li>
+                <li>Eric Freeman " Head First HTML and CSS"</li>
+                <li>Nick Morgan "JavaScript для детей"</li>
+                <li>Java Script video course on YouTube channel IT-KAMASUTRA</li>
+                <li>Git video course on YouTube channel Glo Academy JavaScript</li>
+                <li>
+                    <a href="https://www.freecodecamp.org/annabo"> FreeCodeCamp Responsive Web Design</a> (in progress)
+                </li>
+                <li>JavaScript Manual on learn.javascript.ru (in progress)</li>
+                <li>RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</li>
+            </ul>
+        </section>
+        <section class="work-experience">
+            <h3>Work experience:</h3>
+            <p>I have study project:</p>
+            <ol>
+                <li>
+                    <a href="https://annabogdanovich4.github.io/rsschool-cv/">CV-Mackdawn</a>
+                </li>
+            </ol>
+        </section>
+        <section class="Languages">
+            <h3>Languages:</h3>
+            <ul>
+                <li>Russian - native speaker.</li>
+                <li>English - A1 (A2 in process…)</li>
+            </ul>
+            <p>I study in StreamLine Language School.</p>
+        </section>
+    </main>
+    <footer>
+        <section class="all-footer">
+            <div class="year">2022</div>
+            <div class="github">
+                <a href="https://github.com/AnnaBogdanovich4">AnnaBogdanovich4</a>
+            </div>
+            <div class="logo-school">
+                <a href="https://rs.school/js/">
+                    <img src="https://rs.school/images/rs_school_js.svg" width="50" height="40" alt="Logo RS School">
+                </a>
+            </div>
+            </secion>
+    </footer>
 </body>
 
 </html>

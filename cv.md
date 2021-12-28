@@ -11,7 +11,7 @@
 + Telegram: @anitabogdanovich
 + Discord: #5959
 + GitHub: [AnnaBogdanovich4](AnnaBogdanovich4)
-+ LinkedIn
+
   
 ## About myself:
 
@@ -63,7 +63,7 @@ drawSnowman(150, 150);
     </script>
 ```
 ## Education and courses:
-* HTML Academy
+* HTML Academy. 
 I study HTML, CSS and JS on simulators.
 
 * Eric Freeman "
@@ -78,7 +78,7 @@ JavaScript
 * FreeCodeCamp Responsive Web Design https://www.freecodecamp.org/annabo
  (in progress)
   
-* JavaScript Manual on learnjavascript.ru (in progress)
+* JavaScript Manual on learn.javascript.ru (in progress)
   
 * RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
 
@@ -88,7 +88,7 @@ I have study project:
 1. CV-Mackdawn
    https://annabogdanovich4.github.io/rsschool-cv/
 
-## Languages
+## Languages:
 - Russian - native speaker.
 - English - A1 (A2 in process…)
   

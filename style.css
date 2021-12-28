@@ -1,3 +1,13 @@
-h1 {
-    background-color: antiquewhite;
+main {
+    background-color: rgb(243, 202, 148);
+}
+
+.navigation ul {
+    display: flex;
+    background-color: rgb(51, 199, 88);
+}
+
+.all-footer {
+    display: flex;
+    background-color: rgb(241, 86, 86);
 }
