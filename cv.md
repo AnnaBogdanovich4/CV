@@ -7,10 +7,10 @@
 ## Contacts:
 
 + Phone: +375(29)6039099
-+ E-mail: annabo1988@gmail.com
++ E-mail: bogdanovicanna4@gmail.com
 + Telegram: @anitabogdanovich
-+ Discord: #5959
 + GitHub: [AnnaBogdanovich4](AnnaBogdanovich4)
++ location: Belarus, Mogilev
 
   
 ## About myself:

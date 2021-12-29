@@ -1,0 +1,122 @@
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100vh;
+        min-width: 320px;
+        padding: 0;
+        background-color: black;
+        font-family: Montserrat, Arial, sans-serif;
+        font-weight: normal;
+        font-size: 18px;
+    }
+    
+    .container {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    
+    .main-header {
+        background-color: rgb(51, 199, 88);
+    }
+    
+    .navigation-list {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        list-style: none;
+    }
+    
+    .navigation-item {
+        display: block;
+    }
+    
+    .navigation-link {
+        padding: 0 10px;
+        line-height: 50px;
+    }
+    
+    .navigation-item a {
+        position: relative;
+        padding: 0 10px;
+        color: white;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+    
+    .navigation-item a:hover {
+        color: blueviolet;
+    }
+    
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #C4C4C4;
+    }
+    
+    .section {
+        width: 50%;
+        padding: 0 20px;
+    }
+    
+    .section-profile {
+        display: flex;
+        width: 100%;
+    }
+    
+    main img {
+        margin: 20px;
+        height: 200px;
+        border-radius: 50%;
+        box-shadow: 0 1px 4px rgb(0 0 0 / 40%);
+        object-fit: cover;
+    }
+    
+    .footer-list {
+        display: flex;
+        background-color: rgb(241, 86, 86);
+    }
+    
+    h1 {
+        font-family: Caladea, Arial, sans-serif;
+        font-weight: bold;
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-family: Monserrat, Arial, sans-serif;
+        font-weight: 600;
+    }
+    
+    h3 {
+        line-height: 50px;
+        text-transform: uppercase;
+    }
+    
+    @media (max-width: 768px) {
+        .section {
+            width: 100%;
+        }
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    .footer-list {
+        display: flex;
+        align-items: stretch;
+        margin: 0 auto;
+        color: #fff;
+    }
+    
+    .footer-link {
+        padding: 0 10px;
+        line-height: 50px;
+        display: block;
+        margin: 0 20;
+    }
