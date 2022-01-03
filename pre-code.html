@@ -1,0 +1,15 @@
+<pre><code>
+function circus(x, y, radius, color, fillCircus) {
+    ctx.fillStyle = color;
+    ctx.strokeStyle = color;
+    ctx.lineWidth = 3;
+    ctx.beginPath();
+        if (fillCircus) {
+        ctx.arc(x, y, radius, 0, Math.PI * 2, false);
+        ctx.fill();
+        } else {
+        ctx.arc(x, y, radius, 0, Math.PI * 2, false);
+        ctx.stroke();
+        };
+};
+</code> </pre>

@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="imag/icon" href="./assets/vsg/favicon_flowers.ico" sizes="32x32">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="icon" type="imag/icon" href="assets/svg/favicon_flowers.ico" sizes="32x32">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <title>CV_from_Anna_Bogdanovich</title>
 </head>
 
 <body>
-    <header class="main-header">
+    <header class="header">
         <div class="container header-container"></div>
         <nav class="navigation">
             <ul class="navigation-list">
@@ -40,135 +40,147 @@
             </ul>
         </nav>
         </div>
-        <main class="main-main">
-            <div class="container main-container">
-                <section class="section section-profile" id="profile">
-                    <img src="./assets/img/Avatarka.jpg" width="200" height="250" alt="avatar">
-                    <div class="title-profile">
-                        <h1 class="section-title main-title">Anna Bogdanovich</h1>
-                        <h3 class="section-subtitle">Junior Frontend Developer</h3>
+    </header>
+    <main class="main">
+        <div class="container main-container">
+            <section class="section section-profile" id="profile">
+                <img src="./assets/img/Avatarka.jpg" width="200" height="250" alt="avatar">
+                <div class="title-profile">
+                    <h1 class="section-title main-title">Anna Bogdanovich</h1>
+                    <h3 class="section-subtitle">Junior Frontend Developer</h3>
+                </div>
+            </section>
+            <section class="section section-contacts" id="contacts">
+                <h2 class="section-title">Contacts:</h2>
+                <ul class="section-list">
+                    <li class="section-item"> Phone:
+                        <a href="tel:+375296039099 "> +375(29)6039099</a>
+                    </li>
+                    <li class="section-item">E-mail:
+                        <a href="mailto:bogdanovicanna4@gmail.com ">bogdanovicanna4@gmail.com</a>
+                    </li>
+                    <li class="section-item">Telegram:
+                        <a href="tg://resolve?domain=anitabogdanovich ">@anitabogdanovich</a>
+                    </li>
+                    <li class="section-item">GitHub:
+                        <a href="https://github.com/AnnaBogdanovich4 ">AnnaBogdanovich4</a>
+                    </li>
+                    <li class="section-item">Location: Belarus, Mogilev</li>
+                </ul>
+            </section>
+            <section class="section section-about-myself" id="about-myself">
+                <h2 class="section-title">About myself:</h2>
+                <p>I want to learn Front-End Development in RSSchool!</p>
+            </section>
+            <section class="section section-skills-and-proficiency" id="skills-and-proficiency">
+                <h2 class="section-title">Skills and Proficiency:</h2>
+                <ul class="section-list">
+                    <li class="section-item">HTML5 & CSS3</li>
+                    <li class="section-item">JavaScript Basics</li>
+                    <li class="section-item">GitHub/Git</li>
+                    <li class="section-item">VS Code</li>
+                    <li class="section-item">Figma</li>
+                </ul>
+            </section>
+            <section class="section" id="code-examples">
+                <h2 class="section-title">Code Examples:</h2>
+                <div class="section-code-examples">
+                    <div class="rezult">
+                        <code>
+
+                            <body>
+                                <canvas id="canvas" width="400" height="400"></canvas>
+                                <script>
+                                    var canvas = document.getElementById("canvas");
+                                    var ctx = canvas.getContext("2d");
+                                    var fillCircus = true;
+
+                                    function circus(x, y, radius, color, fillCircus) {
+                                        ctx.fillStyle = color;
+                                        ctx.strokeStyle = color;
+                                        ctx.lineWidth = 3;
+                                        ctx.beginPath();
+                                        if (fillCircus) {
+                                            ctx.arc(x, y, radius, 0, Math.PI * 2, false);
+                                            ctx.fill();
+                                        } else {
+                                            ctx.arc(x, y, radius, 0, Math.PI * 2, false);
+                                            ctx.stroke();
+                                        };
+                                    };
+
+                                    function drawSnowman(x, y) {
+                                        circus(x, y, 50, "blue ", false);
+                                        circus(x, (y + 120), 70, "blue ", false);
+                                        circus((x - 25), (y - 25), 5, "black ", true);
+                                        circus((x + 25), (y - 25), 5, "black ", true);
+                                        circus(x, y, 5, "orange ", true);
+                                        circus(x, (y + 95), 5, "orange ", true);
+                                        circus(x, (y + 120), 5, "orange ", true);
+                                        circus(x, (y + 145), 5, "orange ", true);
+                                    };
+
+                                    drawSnowman(100, 100);
+                                </script>
+                            </body>
+    
+                           </code>
                     </div>
-                </section>
-                <section class="section section-contacts" id="contacts">
-                    <h2 class="section-title">Contacts:</h2>
-                    <ul class="section-list">
-                        <li class="section-item"> Phone:
-                            <a href="tel:+3296039099 "> +375(29)6039099</a>
-                        </li>
-                        <li class="section-item">E-mail:
-                            <a href="mailto:bogdanovicanna4@gmail.com ">bogdanovicanna4@gmail.com</a>
-                        </li>
-                        <li class="section-item">Telegram:
-                            <a href="tg://resolve?domain=anitabogdanovich ">@anitabogdanovich</a>
-                        </li>
-                        <li class="section-item">GitHub:
-                            <a href="https://github.com/AnnaBogdanovich4 ">AnnaBogdanovich4</a>
-                        </li>
-                        <li class="section-item">Location: Belarus, Mogilev</li>
-                    </ul>
-                </section>
-                <section class="section section-about-myself " id="about-myself ">
-                    <h2 class="section-title ">About myself:</h2>
-                    <p>I want to learn Front-End Development in RSSchool!</p>
-                </section>
-                <section class="section section-skills-and-proficiency" id="skills-and-proficiency ">
-                    <h2 class="section-title ">Skills and Proficiency:</h2>
-                    <ul class="section-list">
-                        <li class="section-item">HTML5 & CSS3</li>
-                        <li class="section-item">JavaScript Basics</li>
-                        <li class="section-item">GitHub/Git</li>
-                        <li class="section-item">VS Code</li>
-                        <li class="section-item">Figma</li>
-                    </ul>
-                </section>
-                <section class="section section-code-examples" id="code-examples">
-                    <h2 class="section-title">Code Examples:</h2>
-                    <code><pre>
-                <body>
-                    <canvas id="canvas" width="400" height="400"></canvas>
-                  <script>
-                    var canvas = document.getElementById("canvas");
-                    var ctx = canvas.getContext("2d");
-                    var fillCircus = true;
-
-                    function circus(x, y, radius, color, fillCircus) {
-                        ctx.fillStyle = color;
-                        ctx.strokeStyle = color;
-                        ctx.lineWidth = 3;
-                        ctx.beginPath();
-                        if (fillCircus) {
-                            ctx.arc(x, y, radius, 0, Math.PI * 2, false);
-                            ctx.fill();
-                        } else {
-                            ctx.arc(x, y, radius, 0, Math.PI * 2, false);
-                            ctx.stroke();
-                        };
-                    };
-
-                    function drawSnowman(x, y) {
-                        circus(x, y, 50, "blue", false);
-                        circus(x, (y + 120), 70, "blue", false);
-                        circus((x - 25), (y - 25), 5, "black", true);
-                        circus((x + 25), (y - 25), 5, "black", true);
-                        circus(x, y, 5, "orange", true);
-                        circus(x, (y + 95), 5, "orange", true);
-                        circus(x, (y + 120), 5, "orange", true);
-                        circus(x, (y + 145), 5, "orange", true);
-                    };
-
-                    drawSnowman(150, 150);
-
-                </script>  
-            </pre> </code>
-                </section>
-                <section class="section section-education-and-courses" id="education-and-courses">
-                    <h2 class="section-title ">Education and courses:</h2>
-                    <ul class="section-list">
-                        <li class="section-item">HTML Academy. I study HTML, CSS and JS on simulators.</li>
-                        <li class="section-item">Eric Freeman " Head First HTML and CSS "</li>
-                        <li class="section-item">Nick Morgan "JavaScript для детей "</li>
-                        <li class="section-item">Java Script video course on YouTube channel IT-KAMASUTRA</li>
-                        <li class="section-item">Git video course on YouTube channel Glo Academy JavaScript</li>
-                        <li class="section-item">
-                            <a href="https://www.freecodecamp.org/annabo "> FreeCodeCamp Responsive Web Design</a> (in progress)
-                        </li>
-                        <li class="section-item">JavaScript Manual on learn.javascript.ru (in progress)</li>
-                        <li class="section-item">RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</li>
-                    </ul>
-                </section>
-                <section class="section section-work-experience " id="work-experience ">
-                    <h2 class="section-title ">Work experience:</h2>
-                    <p>I have study project:</p>
-                    <ol class="section-list">
-                        <li class="section-item number-ol">
-                            <a href="https://annabogdanovich4.github.io/rsschool-cv/ ">CV-Mackdawn</a>
-                        </li>
-                    </ol>
-                </section>
-                <section class="section section-languages " id="languages ">
-                    <h2 class="section-title ">Languages:</h2>
-                    <ul class="section-list">
-                        <li class="section-item">Russian - native speaker.</li>
-                        <li class="section-item">English - A1 (A2 in process…)</li>
-                    </ul>
-                    <p>I study in StreamLine Language School.</p>
-                </section>
-            </div>
-        </main>
-        <footer class="main-footer">
-            <div class="container footer-container">
-                <ul class="footer-list">
-                    <li class="footer-item">2022</li>
-                    <li class="footer-item">
-                        <a href="https://github.com/AnnaBogdanovich4 " " target=" ">AnnaBogdanovich4</a></li>
-                    <li class="footer-item ">
-                        <a href=" https://rs.school/js/target=" ">
-                            <img src="https://rs.school/images/rs_school_js.svg" width="50" height="40" alt="Logo RS School">
+                    <div class="pre-code">
+                        <a href="./pre-code.html" target=" ">Code of Snowman
                         </a>
+                    </div>
+                </div>
+            </section>
+            <section class=" section section-education-and-courses " id="education-and-course ">
+                <h2 class="section-title ">Education and courses:</h2>
+                <ul class="section-list ">
+                    <li class="section-item ">HTML Academy. I study HTML, CSS and JS on simulators.</li>
+                    <li class="section-item ">Eric Freeman " Head First HTML and CSS "</li>
+                    <li class="section-item ">Nick Morgan "JavaScript для детей "</li>
+                    <li class="section-item ">Java Script video course on YouTube channel IT-KAMASUTRA</li>
+                    <li class="section-item ">Git video course on YouTube channel Glo Academy JavaScript</li>
+                    <li class="section-item ">
+                        <a href="https://www.freecodecamp.org/annabo "> FreeCodeCamp Responsive Web Design</a> (in progress)
+                    </li>
+                    <li class="section-item ">JavaScript Manual on learn.javascript.ru (in progress)</li>
+                    <li class="section-item ">RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
                     </li>
                 </ul>
+            </section>
+            <section class="section section-work-experience " id="work-experience ">
+                <h2 class="section-title ">Work experience:</h2>
+                <p>I have study project:</p>
+                <ol class="section-list ">
+                    <li class="section-item number-ol ">
+                        <a href="https://annabogdanovich4.github.io/rsschool-cv/ ">CV-Mackdawn</a>
+                    </li>
+                </ol>
+            </section>
+            <section class="section section-languages " id="languages ">
+                <h2 class="section-title ">Languages:</h2>
+                <ul class="section-list ">
+                    <li class="section-item ">Russian - native speaker.</li>
+                    <li class="section-item ">English - A1 (A2 in process…)</li>
+                </ul>
+                <p>I study in StreamLine Language School.</p>
+            </section>
+        </div>
+    </main>
+    <footer class="footer ">
+        <div class="container footer-container ">
+            <div class="footer-item date "> © 2022
             </div>
-        </footer>
+            <div class="footer-item github ">
+                <a href="https://github.com/AnnaBogdanovich4 " target=" "> AnnaBogdanovich4 </a>
+            </div>
+            <div class="footer-item school ">
+                <a href="https://rs.school/js/ " target=" ">
+                    <img src=" https://rs.school/images/rs_school_js.svg " width=" 80 " height="50 " alt="Logo RS School ">
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
