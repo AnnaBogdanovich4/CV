@@ -10,6 +10,7 @@
 + E-mail: bogdanovicanna4@gmail.com
 + Telegram: @anitabogdanovich
 + GitHub: [AnnaBogdanovich4](AnnaBogdanovich4)
++ Discord: Анна Богданович#5959
 + location: Belarus, Mogilev
 
   
@@ -27,7 +28,7 @@ I want to learn Front-End Development in RSSchool!
 ## Code Examples:
 ```
  <body>
-  	<canvas id="canvas" width="700" height="700"></canvas>
+  	<canvas id="canvas" width="400" height="400"></canvas>
 	<script>
   var canvas = document.getElementById("canvas");
   var ctx = canvas.getContext("2d");
@@ -57,12 +58,9 @@ circus (x, (y + 95), 5, "orange", true);
 circus (x, (y + 120), 5, "orange", true);
 circus (x, (y + 145), 5, "orange", true);
 };
-
-drawSnowman(150, 150);
-
-    </script>
+</script>
 ```
-## Education and courses:
+## Courses:
 * HTML Academy. 
 I study HTML, CSS and JS on simulators.
 
@@ -87,6 +85,9 @@ I have study project:
 
 1. CV-Mackdawn
    https://annabogdanovich4.github.io/rsschool-cv/
+
+## Education:
+Belarusian State University of Food and Chemical Technologies
 
 ## Languages:
 - Russian - native speaker.

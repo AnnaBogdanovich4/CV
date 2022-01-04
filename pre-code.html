@@ -4,12 +4,25 @@ function circus(x, y, radius, color, fillCircus) {
     ctx.strokeStyle = color;
     ctx.lineWidth = 3;
     ctx.beginPath();
-        if (fillCircus) {
+    if (fillCircus) {
         ctx.arc(x, y, radius, 0, Math.PI * 2, false);
         ctx.fill();
-        } else {
+    } else {
         ctx.arc(x, y, radius, 0, Math.PI * 2, false);
         ctx.stroke();
-        };
+    };
 };
+
+function drawSnowman(x, y) {
+    circus(x, y, 50, "blue", false);
+    circus(x, (y + 120), 70, "blue", false);
+    circus((x - 25), (y - 25), 5, "black", true);
+    circus((x + 25), (y - 25), 5, "black", true);
+    circus(x, y, 5, "orange", true);
+    circus(x, (y + 95), 5, "orange", true);
+    circus(x, (y + 120), 5, "orange", true);
+    circus(x, (y + 145), 5, "orange", true);
+};
+    </script>
+
 </code> </pre>
